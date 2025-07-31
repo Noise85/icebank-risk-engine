@@ -11,7 +11,7 @@ In trading systems, a rule engine plays a critical role in enforcing business lo
 - **`Order`**: An interface representing a trading order. It includes methods to retrieve the user ID, size, price, and a mechanism to accept a visitor for rule evaluation.
 - **`OrderEvent`**: A class encapsulating an `Order` object, representing an event in the system.
 - **`RiskEngineVisitor`**: A visitor interface or class that defines the logic for evaluating rules against an `Order`.
-- **`RiskEngine`**: An interface and its implementations form the core of the system, responsible for managing and applying rules to trading orders.- **`RiskEngine`**: An interface and its implementations form the core of the system, responsible for managing and applying rules to trading orders.3. **Event Dispatch**: The `Order` is passed to a `RiskEngineVisitor` to dispatch events asynchronously.1. Define rules by implementing the `RiskRule` interface, which specifies the logic for individual checks (e.g., size limits, price thresholds).
+- **`RiskEngine`**: An interface and its implementations form the core of the system, responsible for managing and applying rules to trading orders.
 - **`RiskRule`**: An interface defining a method to check an `Order` against specific risk criteria, returning a `RiskDecision`.
 
 ### Data Flow
